@@ -2,28 +2,31 @@
 	<html>
 		<head>
 			<title>{{ page.title }}</title>
+      
+      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 		</head>
 		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
+      <div class="container">
+        <div class="header">
+			    <ul class="nav nav-pills pull-right">
+	          <li><a href="/cv">CV</a></li>
+	          <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+	        </ul>
+          <h3><a href="/">Andrew Sheahan</a></h3>
+        </div>
 			
-			{{ content }}
+			  {{ content }}
 			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-				</ul>
-			</footer>
+			  <footer>
+          <div class="pull-right">
+            <span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>
+            ASHEAHAN 2016
+          </div>
+			  </footer>
+      </div><!-- container -->
 		</body>
 	</html>
