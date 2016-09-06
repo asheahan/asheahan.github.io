@@ -1,25 +1,18 @@
+/*******************************
+ * Site wide styles
+ ******************************/
+
 body {
     margin: 10px auto;
     font-family: 'Raleway', 'Helvetica', 'Arial', 'Sans-Serif';
 }
-.home-content {
-    margin: 20px 0;
-}
-nav ul, footer ul {
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-}
 a {
     text-decoration: none;
-    color: #999;
+    color: #020692;
 }
 a:hover {
     text-decoration: none;
+    color: #999;
 }
 h1 {
     font-size: 3em;
@@ -31,14 +24,11 @@ p {
     line-height: 1.4em;
     color: #333;
 }
-.content {
-    margin: 50px 0;
-}
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-    padding-top: 10px;
-}
+
+/*******************************
+ * Header
+ ******************************/
+
 .header {
     border-bottom: 1px solid #d5d5d5;
     text-transform: uppercase;
@@ -48,13 +38,41 @@ footer {
     font-weight: normal;
     line-height: 40px;
 }
-ul.posts { 
-    margin: 20px auto 40px; 
-    font-size: 1.5em;
+.header nav a:hover {
+    /* TODO: Fix for pill colors */
+    color: #000;
+}
+nav ul, footer ul {
+    padding: 0px;
+    list-style: none;
+    font-weight: bold;
+}
+nav ul li, footer ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-ul.posts li {
-    list-style: none;
+/*******************************
+ * Footer
+ ******************************/
+
+footer {
+    border-top: 1px solid #d5d5d5;
+    font-size: .8em;
+    padding-top: 10px;
+}
+
+/*******************************
+ * Content
+ ******************************/
+
+.content {
+    margin: 50px 0;
+}
+
+/* Home */
+.home-content {
+    margin: 20px 0;
 }
 .profile-image-container {
     text-align: center;
@@ -63,4 +81,14 @@ ul.posts li {
     border-radius: 50%;
     width: 150px;
     margin-top: 20px;
+}
+
+/* Blog */
+ul.posts { 
+    margin: 20px auto 40px; 
+    font-size: 1.5em;
+}
+
+ul.posts li {
+    list-style: none;
 }
