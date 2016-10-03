@@ -1,3 +1,6 @@
 name: Andrew Sheahan
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+
+# Google services
+google_analytics: UA-85094843-1
