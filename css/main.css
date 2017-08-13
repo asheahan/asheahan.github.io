@@ -1,20 +1,69 @@
 /*******************************
  * Site wide styles
  ******************************/
-
-body {
-    margin: 10px auto;
-    font-family: 'Raleway', 'Helvetica', 'Arial', 'Sans-Serif';
+html, body {
+    height: 100%;
 }
-a {
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.background-white {
+    background-color: #ffffff
+}
+
+.background-gray {
+    background-color: #efefef;
+}
+
+.no-bullets {
+    list-style: none;
+}
+
+.highlight {
+    color: #388e3c;
+}
+
+h1.header {
+    font-weight: 100;
+    font-size: 5.5rem;
+    line-height: 1.1;
+}
+
+h2.section-header {
+    font-weight: 100;
+    font-size: 4.5rem;
+    line-height: 1.1;
+    text-align: center;
+    color: #388e3c;
+}
+
+.background-gray h2.section-header, .highlight {
+    color: #00600f;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.ability-list li {
+    margin: 8px;
+}
+
+/*a {
     text-decoration: none;
     color: #020692;
 }
 a:hover {
     text-decoration: none;
     color: #999;
-}
-h1 {
+}*/
+/*h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
@@ -23,13 +72,13 @@ p {
     font-size: 1.5em;
     line-height: 1.4em;
     color: #333;
-}
+}*/
 
 /*******************************
  * Header
  ******************************/
 
-.header {
+/*.header {
     border-bottom: 1px solid #d5d5d5;
     text-transform: uppercase;
     padding-bottom: 10px;
@@ -39,7 +88,6 @@ p {
     line-height: 40px;
 }
 .header .nav li a:hover {
-    /* TODO: Fix for pill colors */
     color: #020692;
 }
 .header .nav li.active a {
@@ -56,7 +104,7 @@ p {
 .nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
-}
+}*/
 
 /*******************************
  * Footer
@@ -72,21 +120,49 @@ footer {
  * Content
  ******************************/
 
-.content {
-    margin: 50px 0;
+.container {
+    max-width: 1280px;
+    padding: 40px 180px;
 }
 
-/* Home */
-.home-content {
-    margin: 20px 0;
+.jumbotron.welcome {
+    background: no-repeat center right fixed url(../assets/background.jpg);
+    background-size: cover;
 }
-.profile-image-container {
+
+.jumbotron .overlay {
+    background-color: #8eacbb;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    opacity: 0.75;
+    z-index: 2;
+}
+
+.welcome .container {
+    position: relative;
+    top: 28%;
     text-align: center;
 }
+
+
+
+/*#profile h2 {
+    color: #388e3c;
+    text-align: center;
+}*/
+
+#profile p.lead {
+    text-align: center;
+}
+
 .profile-image {
     border-radius: 50%;
-    width: 150px;
+    width: 200px;
     margin-top: 20px;
+    border: 5px solid #6abf69;
 }
 
 /* Blog */

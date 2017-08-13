@@ -1,54 +1,31 @@
 <!DOCTYPE html>
 	<html>
 		<head>
+      <meta charset="utf-8">
+      <meta name="author" content="Andrew Sheahan">
+      <meta name="description" content="Profile for Andrew Sheahan">
+
 			<title>Andrew Sheahan | {{ page.title }}</title>
       
-      <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <!-- stylesheets -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 
-      <link rel="stylesheet" type="text/css" href="/css/font-awesome-4.6.3/css/font-awesome.min.css">
-
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       {% if jekyll.environment == 'production' %}
       {% include analytics.html %}
       {% endif %}
 		</head>
 		<body>
-      <div class="container">
-        {% include navigation.html nav=page.nav %}
-<!--         <div class="header">
-			    <ul class="nav nav-pills pull-right">
-	          <li><a href="/cv">CV</a></li>
-            <li><a href="/about">About</a></li>
-	          <li><a href="/blog">Blog</a></li>
-	        </ul>
-          <h3><a href="/">Andrew Sheahan</a></h3>
-        </div> -->
+      <div class="content">
+        {{ content }}
+      </div>
 			
-        <div class="content">
-			    {{ content }}
-        </div>
-			
-			  <footer>
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-6">
-                <div class="contact-methods">
-                  <a href="https://www.linkedin.com/in/andrewsheahan" title="LinkedIn"><i class="fa fa-linkedin-square fa-fw fa-2x" aria-hidden="true"></i></a>
-                  <a href="https://github.com/asheahan" title="GitHub"><i class="fa fa-github fa-fw fa-2x" aria-hidden="true"></i></a>
-                  <a href="#" title="Email"><i class="fa fa-envelope fa-fw fa-2x" aria-hidden="true"></i></a>
-                </div>
-              </div>
-              <div class="col-xs-6">
-                <div class="pull-right">
-                  <!--<span class="fa fa-copyright" aria-hidden="true"></span>-->
-                  ASHEAHAN 2017
-                </div>
-              </div>
-            </div>
-          </div>
-			  </footer>
-      </div><!-- container -->
+      
+      <script type="text/javascript" src="/js/main.js"></script>
 		</body>
 	</html>
