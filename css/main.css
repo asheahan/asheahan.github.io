@@ -214,6 +214,21 @@ footer {
 }
 
 /* Blog */
+.back-button {
+    position: fixed;
+    top: 9%;
+    left: 1%;
+}
+
+.back-button a {
+    color: #707070;
+}
+
+.back-button a:hover {
+    color: #00600f;
+    text-decoration: none;
+}
+
 .post-content {
     font-weight: 300;
 }
