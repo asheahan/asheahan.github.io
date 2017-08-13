@@ -21,11 +21,15 @@ strong {
     background-color: #efefef;
 }
 
+.background-dark-gray {
+    background-color: #707070;
+}
+
 .no-bullets {
     list-style: none;
 }
 
-.highlight {
+.secondary {
     color: #388e3c;
 }
 
@@ -43,7 +47,34 @@ h2.section-header {
     color: #388e3c;
 }
 
-.background-gray h2.section-header, .highlight {
+h2.contact-header {
+    font-weight: 100;
+    font-size: 4.5rem;
+    line-height: 1.1;
+    text-align: center;
+    color: #ffffff;
+}
+
+#contact {
+    height: 450px;
+    padding-bottom: 30px;
+}
+
+#contact hr {
+    background-color: #cfcfcf;
+}
+
+#contact a {
+    color: #cfcfcf;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.background-gray h2.section-header, .secondary {
     color: #00600f;
 }
 
@@ -53,6 +84,23 @@ h2.section-header {
 
 .ability-list li {
     margin: 8px;
+}
+
+.contact li {
+    margin: 8px;
+}
+
+.subpage-header {
+    text-align: center;
+}
+
+a.post-link {
+    color: #707070;
+}
+
+a.post-link:hover {
+    color: #00600f;
+    text-decoration: none;
 }
 
 /*a {
@@ -166,14 +214,27 @@ footer {
 }
 
 /* Blog */
-ul.posts { 
+.post-content {
+    font-weight: 300;
+}
+
+.post-content a {
+    color: #707070;
+}
+
+.post-content a:hover {
+    color: #00600f;
+    text-decoration: none;
+}
+
+/*ul.posts { 
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
 
 ul.posts li {
     list-style: none;
-}
+}*/
 
 table {
   padding: 0; }

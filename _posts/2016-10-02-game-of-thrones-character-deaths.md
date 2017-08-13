@@ -2,6 +2,9 @@
 layout: post
 title: "Game of Thrones - Character Deaths"
 date: 2016-10-02
+category: Data Analysis
+tags: [R, MySQL, ggplot2, Game of Thrones]
+description: "Analysis and visualization of character deaths in George R. R. Martin's A Song of Ice and Fire book series."
 ---
 
 Like many people, I love Game of Thrones - both TV show and book series. Seriously, I've read the series twice and am thinking of reading it for the third time. However, there are spoilers ahead so please stop if you aren't up to date!

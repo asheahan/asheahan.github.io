@@ -1,13 +1,40 @@
 ---
 layout: default
-title: Technology Blog
+title: Blog
 nav: blog
 ---
-    <h1>{{ page.title }}</h1>
-    <p>This is hopefully the start to an almost weekly posting about web development and data analytics. Stay tuned as I try to showcase and improve my abilities using <a href="https://nodejs.org/en/" target="_blank">Node.js</a> and <a href="https://angularjs.org/" target="_blank">AngularJS</a> on the web development end and <a href="https://www.r-project.org/" target="_blank">R</a> and <a href="https://www.python.org/" target="_blank">Python</a> for data analytics. Hoping to learn and implement predictive and text analytics techniques through machine learning and natural language processing with open source data.
-    <ul class="posts">
+{% include navigation.html %}
 
-      {% for post in site.posts %}
-        <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
-      {% endfor %}
-    </ul>
+<div class="blog-header">
+  <div class="container">
+    <h2 class="blog-title section-header">{{ page.title }}</h2>
+    <!--<p class="lead blog-description">This blog represents a showcase of experiments I conduct as I research and learn new technologies. I write about data analysis, web development, and general programming spanning various topics.</p>-->
+    <hr>
+    <div class="p-3"></div>
+    <div class="row">
+      <div class="col-sm-9">
+        {% for post in site.posts %}
+          <div class="post">
+            <p class="date"><strong>{{ post.date | date_to_string }}</strong></p>
+            <a class="post-link" href="{{ post.url }}" title="{{ post.title }}"><h4>{{ post.title }}</h4></a>
+            <p class="light">{{ post.description }}</p>
+          </div>
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h3 class="secondary light">About</h3>
+        <p class="blog-about light">This blog represents a showcase of experiments I conduct as I research and learn new technologies. I write about data analysis, web development, and general programming spanning various topics.</p>
+        <!--<hr>
+        <h3 class="highlight light">Archive</h3>
+        <hr>
+        <h3 class="highlight light">Categories</h3>
+        <hr>
+        <h3 class="highlight light">Tags</h3>
+        {% for tag in tags %}
+          <a  href="#{{ tag | slugify }}">{{ tag }}</a>
+        {% endfor %}-->
+      </div>
+    </div>
+  </div>
+</div>

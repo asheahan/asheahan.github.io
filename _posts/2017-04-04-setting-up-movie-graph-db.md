@@ -2,6 +2,9 @@
 layout: post
 title: "Setting Up Marvel Netflix Graph Database"
 date: 2017-04-04
+category: Database
+tags: [Python, Neo4j, Marvel]
+description: "Basic setup for a Neo4j graph database using Rotten Tomatoes review data for Marvel TV Shows on Netflix."
 ---
 
 In this post, I'm going to create a graph database using Neo4j to store Marvel Netflix shows and reviews (this data was obtained in the [previous post](https://github.com/asheahan/netflix-marvel-tv))

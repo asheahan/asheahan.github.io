@@ -2,6 +2,9 @@
 layout: post
 title: "Airplane Crashes"
 date: 2016-10-08
+category: Data Analysis
+tags: [Python, Pandas, MySQL, Tableau]
+description: "Analysis and visualization of historical airplane crashes from around the world."
 ---
 
 Let's take a look at airplane crashes to see if we can find any patterns. This will be a descriptive analytics exercise, but may evolve to a predictive model builder in the future.

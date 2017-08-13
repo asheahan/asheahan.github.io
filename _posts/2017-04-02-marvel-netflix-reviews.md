@@ -2,6 +2,9 @@
 layout: post
 title: "Marvel Netflix Show Reviews"
 date: 2017-04-02
+category: Data Analysis
+tags: [Python, nltk, sklearn, Marvel]
+description: "Natural Language Processing on Rotten Tomatoes reviews for Marvel TV shows on Netflix."
 ---
 
 After watching Marvel's Iron Fist on Netflix, I was pretty disappointed at how bad it was when compared with the other Marvel shows on Netflix. Reviews and articles corroborated my opinion. However, looking at the reviews on [Rotten Tomatoes](www.rottentomatoes.com), the audience rating was surprisingly high! This is my attempt to explain why so many people enjoyed this show despite the bad critic reviews using the user reviews from the site.
